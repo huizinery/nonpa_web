@@ -79,9 +79,11 @@ main{
     text-align: center;}
 
 .banner_inicio{
-    width:90%; 
+    height: 100vh; 
     border-radius: 50px; 
     object-fit: cover; 
+    width: min-content;
+    padding: 5px;
 ;}
 
 .img_link{
@@ -122,9 +124,8 @@ main{
 
 /*carousel*/
 
-.carousel-item img{
-    border-radius: 50px;
-    width: 100%;}
+.carousel-item img{ height: 100vh;border-radius: 50px; padding: 20px;}
+
 
 /*list group*/
 .list-group{margin: 5px;}
@@ -219,9 +220,6 @@ padding:2px;
 
     .section1 div{width:100%;margin: 5px;}
 
-
-    .list-group-item{text-align: start;}
-
     .style_video {width: max-content;}
 }
 
@@ -229,3 +227,5 @@ padding:2px;
     .grid_gale{display: block;}
     .gale_img{height:50vh;object-fit: cover;}
     }
+
+    
