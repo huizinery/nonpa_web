@@ -79,10 +79,9 @@ main{
     text-align: center;}
 
 .banner_inicio{
-    height: 100vh; 
     border-radius: 50px; 
     object-fit: cover; 
-    width: min-content;
+    width:100%;
     padding: 5px;
 ;}
 
@@ -153,7 +152,25 @@ padding:2px;
 .section1:nth-child(even){
     flex-direction: row-reverse;}
 
+/*Grid para main de inicio*/
+.grid_inicio{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(auto,50vh);
+    grid-template-areas:
+    "i1 i1 i1 i1 i1"
+    "i2 i2 . i3 i3"
+    "i2 i2 . i3 i3";
+}
+
+
+.sec_inicio1{grid-area: i1;}
+.sec_inicio2{grid-area: i2;}
+.sec_inicio3{grid-area: i3;}
+
+
 /*Grid para fotos de Galeria*/
+
 
 .grid_gale{
     display: grid;
@@ -221,6 +238,10 @@ padding:2px;
     .section1 div{width:100%;margin: 5px;}
 
     .style_video {width: max-content;}
+
+    .grid_inicio{
+        display: block;}
+
 }
 
 @media screen and (max-width:480px) {
