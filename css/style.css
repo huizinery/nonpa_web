@@ -50,7 +50,8 @@ main{
 
 .style_h1 { 
     text-align: center;
-    font-family: 'Kablammo', cursive;}
+    font-family: 'Kablammo', cursive;
+}
 
 .style_h2{font-family: 'Cinzel', serif; text-align: center;}
 
@@ -139,6 +140,8 @@ padding:2px;
 /*psudoclases*/
 
 .header li:hover{text-decoration-line: underline;transform: scale(1.2); color: red ;}
+
+.gale_img:hover{transform: scale(1.05); transition: 0.5s;}
 
 .list-group-item:hover{ 
     background: #828c95; 
