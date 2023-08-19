@@ -1,0 +1,33 @@
+.grid_gale{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(auto, 400px);
+    padding: 10px;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: stretch;
+    justify-items: center;
+    align-items: center;    
+    grid-template-areas: 
+    "a1 a1 a2 a3"
+    "a1 a1 a2 a3"
+    "a4 a5 a5 a6"
+    "a4 a7 a7 a6"
+    "a8 a8 a9 a9"
+    "a10 a10 a9 a9"
+    ;
+}
+
+.gal_item1{grid-area: a1;}
+.gal_item2{grid-area: a2;}
+.gal_item3{grid-area: a3;}
+.gal_item4{grid-area: a4;}
+.gal_item5{grid-area: a5;}
+.gal_item6{grid-area: a6;}
+.gal_item7{grid-area: a7;}
+.gal_item8{grid-area: a8;}
+.gal_item9{grid-area: a9;}
+.gal_item10{grid-area: a10;}
+
+.grid_div{width: 100%;height: 100%;}
+.gale_img{width: 100%;height: 100%;object-fit: cover;}

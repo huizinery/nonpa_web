@@ -1,0 +1,97 @@
+
+.body{ 
+    color: whitesmoke; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+main{
+    background-image: url(../images/Palm-trees-sunset-vector-picture_1024x768.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;}
+
+/* font family */
+
+.style_h1 { 
+    text-align: center;
+    font-family: 'Kablammo', cursive;}
+
+.style_h2{font-family: 'Cinzel', serif; text-align: center;}
+
+.link_mapa{
+    text-decoration: none;
+    color: black ; 
+    font-family: fantasy;}
+
+.a{ text-decoration: none; 
+    color: rgb(245, 245, 245); 
+    text-align: center;}
+
+.banner_inicio{
+    border-radius: 50px; 
+    object-fit: cover; 
+    width:100%;
+    padding: 5px;
+;}
+
+.img_link{
+    height: 350px;
+    display: block;
+    margin:auto;
+    border-radius:50%; 
+    font-size: larger;}
+
+.p_history{ 
+    line-height: 2.5 ; 
+    text-align: center;
+    font-style: italic;}
+
+.list-group-item{padding: 0px;}
+
+/*carousel*/
+
+.carousel-item img{ height: 100%;border-radius: 50px; padding: 20px;width: 100%;}
+
+
+/*list group*/
+.list-group{margin: 5px;}
+
+.list-group-item{
+text-align : center;
+background : #a6adb3; 
+font-size:large;
+padding:2px;
+}
+
+/*psudoclases*/
+
+.header li:hover{text-decoration-line: underline;transform: scale(1.2); color: red ;}
+
+.list-group-item:hover{ 
+    background: #828c95; 
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(130,140,149,1) 1%, rgba(40,52,59,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(130,140,149,1) 1%,rgba(40,52,59,1) 100%);
+    background: radial-gradient(ellipse at center,  rgba(130,140,149,1) 1%,rgba(40,52,59,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#28343b',GradientType=1 );
+    color: whitesmoke;
+    height: 10%;}
+
+/*Grid para main de inicio*/
+.grid_inicio{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(auto,50vh);
+    grid-template-areas:
+    "i1 i1 i1 i1 i1"
+    "i2 i2 . i3 i3"
+    "i2 i2 . i3 i3";
+}
+
+
+.sec_inicio1{grid-area: i1;}
+.sec_inicio2{grid-area: i2;}
+.sec_inicio3{grid-area: i3;}
+
+/*para borrar overflow-x que se hacia al tener el carousel a la derecha*/
+
+.row{--bs-gutter-x:none;justify-content: space-around;}

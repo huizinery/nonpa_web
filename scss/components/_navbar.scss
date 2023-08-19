@@ -1,0 +1,25 @@
+.body{ 
+    color: whitesmoke; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+.header { 
+    display: flex;
+    background-color: #333; 
+    color: whitesmoke;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap;} 
+
+.header ul{ 
+    display: flex; 
+    gap: 2px;
+    list-style-type: none;padding:0;}
+
+.header li{
+    height: 85px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 0px 5px;}
+
+    .header li:hover{text-decoration-line: underline;transform: scale(1.2); color: red ;}

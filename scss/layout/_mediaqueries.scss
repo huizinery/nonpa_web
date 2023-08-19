@@ -1,0 +1,27 @@
+
+
+/*media queris*/
+
+@media screen and (max-width:768px) {
+
+    .header{width: auto;}
+
+    .section1{flex-direction: column;flex-wrap: nowrap;}
+
+    .section1:nth-child(even){flex-direction:column;}
+
+    .section1 div{width:100%;margin: 5px;}
+
+    .style_video {width: max-content;}
+
+    .grid_inicio{
+        display: block;}
+
+}
+
+@media screen and (max-width:480px) {
+    .grid_gale{display: block;}
+    .gale_img{height:50vh;object-fit: cover;}
+    }
+
+    
