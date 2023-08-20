@@ -45,6 +45,7 @@ footer {
   color: red;
 }
 
+/*index scss*/
 .body {
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -58,7 +59,6 @@ main {
   background-attachment: fixed;
 }
 
-/* font family */
 .style_h1 {
   text-align: center;
   font-family: "Kablammo", cursive;
@@ -106,7 +106,6 @@ main {
   padding: 0px;
 }
 
-/*carousel*/
 .carousel-item img {
   height: 100%;
   border-radius: 50px;
@@ -114,7 +113,6 @@ main {
   width: 100%;
 }
 
-/*list group*/
 .list-group {
   margin: 5px;
 }
@@ -126,11 +124,10 @@ main {
   padding: 2px;
 }
 
-/*psudoclases*/
 .header li:hover {
   text-decoration-line: underline;
   transform: scale(1.2);
-  color: red;
+  color: rgb(0, 140, 255);
 }
 
 .list-group-item:hover {
@@ -143,7 +140,6 @@ main {
   height: 10%;
 }
 
-/*Grid para main de inicio*/
 .grid_inicio {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -163,18 +159,75 @@ main {
   grid-area: i3;
 }
 
-/*para borrar overflow-x que se hacia al tener el carousel a la derecha*/
 .row {
   --bs-gutter-x:none;
   justify-content: space-around;
 }
 
+.text-prim {
+  color: rgb(23, 108, 219);
+}
+
+.bg-prim {
+  background-color: rgb(23, 108, 219);
+}
+
+.text-dang {
+  color: #ff3333;
+}
+
+.bg-dang {
+  background-color: #ff3333;
+}
+
+.text-warn {
+  color: #ffe204;
+}
+
+.bg-warn {
+  background-color: #ffe204;
+}
+
+.text-dar {
+  color: black;
+}
+
+.bg-dar {
+  background-color: black;
+}
+
+.text-ligt {
+  color: white;
+}
+
+.bg-ligt {
+  background-color: white;
+}
+
+.text-succ {
+  color: #28bb2d;
+}
+
+.bg-succ {
+  background-color: #28bb2d;
+}
+
+/*historia scss*/
 .p_history {
   line-height: 2.5;
   text-align: center;
   font-style: italic;
+  font-size: 1.2rem;
 }
 
+.bg-img-history {
+  background: #910200;
+  background: linear-gradient(177deg, #910200 0%, #006f00 80%);
+  background: -webkit-linear-gradient(177deg, #910200 0%, #006f00 80%);
+  background: -moz-linear-gradient(177deg, #910200 0%, #006f00 80%);
+}
+
+/*albumes scss*/
 .bg_img_album {
   background-image: url(../images/bg-tocadisco.jpg);
   background-repeat: no-repeat;
@@ -201,11 +254,11 @@ main {
   object-fit: cover;
 }
 
-/*psudoclases*/
 .section1:nth-child(even) {
   flex-direction: row-reverse;
 }
 
+/*videos scss*/
 .video_container {
   display: flex;
   flex-wrap: wrap;
@@ -219,6 +272,7 @@ main {
   margin: 5px;
 }
 
+/*galeria scss*/
 .grid_gale {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -281,6 +335,9 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.gale_img:hover {
+  transform: scale(1.03);
 }
 
 /*media queris*/

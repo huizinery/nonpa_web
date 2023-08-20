@@ -1,5 +1,13 @@
-
+/*historia scss*/
 .p_history{ 
     line-height: 2.5 ; 
-    text-align: center;
-    font-style: italic;}
+    text-align:center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.bg-img-history {background: #910200;
+    background: linear-gradient(177deg,#910200 0%, #006f00 80%);
+    background: -webkit-linear-gradient(177deg,#910200 0%, #006f00 80%);
+    background: -moz-linear-gradient(177deg,#910200 0%, #006f00 80%);}
+

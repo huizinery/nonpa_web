@@ -1,4 +1,4 @@
-
+/*index scss*/
 .body{ 
     color: whitesmoke; 
     font-family:Verdana, Geneva, Tahoma, sans-serif;}
@@ -9,8 +9,6 @@ main{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;}
-
-/* font family */
 
 .style_h1 { 
     text-align: center;
@@ -25,7 +23,8 @@ main{
 
 .a{ text-decoration: none; 
     color: rgb(245, 245, 245); 
-    text-align: center;}
+    text-align: center;
+}
 
 .banner_inicio{
     border-radius: 50px; 
@@ -48,12 +47,8 @@ main{
 
 .list-group-item{padding: 0px;}
 
-/*carousel*/
-
 .carousel-item img{ height: 100%;border-radius: 50px; padding: 20px;width: 100%;}
 
-
-/*list group*/
 .list-group{margin: 5px;}
 
 .list-group-item{
@@ -63,9 +58,7 @@ font-size:large;
 padding:2px;
 }
 
-/*psudoclases*/
-
-.header li:hover{text-decoration-line: underline;transform: scale(1.2); color: red ;}
+.header li:hover{text-decoration-line: underline;transform: scale(1.2); color: rgb(0, 140, 255) ;}
 
 .list-group-item:hover{ 
     background: #828c95; 
@@ -76,7 +69,6 @@ padding:2px;
     color: whitesmoke;
     height: 10%;}
 
-/*Grid para main de inicio*/
 .grid_inicio{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -86,12 +78,19 @@ padding:2px;
     "i2 i2 . i3 i3"
     "i2 i2 . i3 i3";
 }
-
-
 .sec_inicio1{grid-area: i1;}
 .sec_inicio2{grid-area: i2;}
 .sec_inicio3{grid-area: i3;}
 
-/*para borrar overflow-x que se hacia al tener el carousel a la derecha*/
-
 .row{--bs-gutter-x:none;justify-content: space-around;}
+
+
+
+@each $key, $valor in $colors {
+    .text-#{$key} {
+        color: $valor;
+    }
+    .bg-#{$key}{
+        background-color: $valor;
+    }
+}
