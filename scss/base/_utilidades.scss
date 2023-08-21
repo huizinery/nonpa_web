@@ -6,7 +6,7 @@
                     background-attachment:$atach;
                     }
 
- @keyframes bounce {
+ @keyframes displace {
                     0% {transform: translatex(0);color: #42961b;
                         }
                     25% {transform: translatex(-15px);color: #ffe204;
@@ -16,5 +16,14 @@
                     75% {transform: translatex(15px);color: #ffe204;
                         }
                     100% {transform: translatex(0px); color:#42961b;
+                        }
+                    }
+
+@keyframes bounce {
+                    0% {transform: translateY(0);
+                        }   
+                    50% {transform: translateY(-10px);
+                        }
+                    100% {transform: translateY(0);
                         }
                     }

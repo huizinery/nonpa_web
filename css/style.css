@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-@keyframes bounce {
+@keyframes displace {
   0% {
     transform: translatex(0);
     color: #42961b;
@@ -25,6 +25,17 @@
   100% {
     transform: translatex(0px);
     color: #42961b;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 footer {
@@ -52,7 +63,7 @@ footer {
 }
 
 .header h1 {
-  animation-name: bounce;
+  animation-name: displace;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 3.5s;
@@ -124,20 +135,6 @@ main {
   object-fit: cover;
   width: 100%;
   padding: 5px;
-}
-
-.img_link {
-  height: 350px;
-  display: block;
-  margin: auto;
-  border-radius: 50%;
-  font-size: larger;
-}
-
-.p_history {
-  line-height: 2.5;
-  text-align: center;
-  font-style: italic;
 }
 
 .list-group-item {
@@ -290,6 +287,19 @@ main {
 
 .section1:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.img_link {
+  height: 350px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  font-size: larger;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 0s;
 }
 
 /*videos scss*/

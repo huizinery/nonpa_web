@@ -13,7 +13,7 @@
 .header nav {display: flex;flex-wrap: wrap;justify-content: center;}
 
 .header h1 {
-    animation-name: bounce;
+    animation-name: displace;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 3.5s;
