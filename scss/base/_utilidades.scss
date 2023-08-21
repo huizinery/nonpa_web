@@ -1,0 +1,20 @@
+@mixin bg-img-fixed($url-img,$bg-repeat,$bg-position,$bg-size,$atach){
+                    background-image:$url-img;
+                    background-repeat:$bg-repeat;
+                    background-position:$bg-position;
+                    background-size:$bg-size;
+                    background-attachment:$atach;
+                    }
+
+ @keyframes bounce {
+                    0% {transform: translatex(0);color: #42961b;
+                        }
+                    25% {transform: translatex(-15px);color: #ffe204;
+                        } 
+                    50% {transform: translatex(0px);color: #e61a1a;
+                        }
+                    75% {transform: translatex(15px);color: #ffe204;
+                        }
+                    100% {transform: translatex(0px); color:#42961b;
+                        }
+                    }

@@ -4,15 +4,13 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;}
 
 main{
-    background-image: url(../images/Palm-trees-sunset-vector-picture_1024x768.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;}
+    @include bg-img-fixed(url(../images/Palm-trees-sunset-vector-picture_1024x768.jpg),no-repeat,center,cover,fixed )}
 
 .style_h1 { 
     text-align: center;
-    font-family: 'Kablammo', cursive;}
+    font-family: 'Kablammo', cursive;
+    font-size: 45px;
+}
 
 .style_h2{font-family: 'Cinzel', serif; text-align: center;}
 
@@ -58,8 +56,6 @@ font-size:large;
 padding:2px;
 }
 
-.header li:hover{text-decoration-line: underline;transform: scale(1.2); color: rgb(0, 140, 255) ;}
-
 .list-group-item:hover{ 
     background: #828c95; 
     background: -moz-radial-gradient(center, ellipse cover,  rgba(130,140,149,1) 1%, rgba(40,52,59,1) 100%);
@@ -67,7 +63,8 @@ padding:2px;
     background: radial-gradient(ellipse at center,  rgba(130,140,149,1) 1%,rgba(40,52,59,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#28343b',GradientType=1 );
     color: whitesmoke;
-    height: 10%;}
+    height: 10%;
+    transition: 2.5s;}
 
 .grid_inicio{
     display: grid;

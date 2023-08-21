@@ -5,6 +5,28 @@
   box-sizing: border-box;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translatex(0);
+    color: #42961b;
+  }
+  25% {
+    transform: translatex(-15px);
+    color: #ffe204;
+  }
+  50% {
+    transform: translatex(0px);
+    color: #e61a1a;
+  }
+  75% {
+    transform: translatex(15px);
+    color: #ffe204;
+  }
+  100% {
+    transform: translatex(0px);
+    color: #42961b;
+  }
+}
 footer {
   background-color: #333;
   color: whitesmoke;
@@ -18,10 +40,23 @@ footer {
 .header {
   display: flex;
   background-color: #333;
-  color: whitesmoke;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header h1 {
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3.5s;
+  animation-delay: 0s;
 }
 
 .header ul {
@@ -39,10 +74,12 @@ footer {
   margin: 0px 5px;
 }
 
+.header li img {
+  height: 40px;
+}
+
 .header li:hover {
-  text-decoration-line: underline;
-  transform: scale(1.2);
-  color: red;
+  transform: scale(1.1);
 }
 
 /*index scss*/
@@ -62,6 +99,7 @@ main {
 .style_h1 {
   text-align: center;
   font-family: "Kablammo", cursive;
+  font-size: 45px;
 }
 
 .style_h2 {
@@ -124,12 +162,6 @@ main {
   padding: 2px;
 }
 
-.header li:hover {
-  text-decoration-line: underline;
-  transform: scale(1.2);
-  color: rgb(0, 140, 255);
-}
-
 .list-group-item:hover {
   background: #828c95;
   background: -moz-radial-gradient(center, ellipse cover, rgb(130, 140, 149) 1%, rgb(40, 52, 59) 100%);
@@ -138,6 +170,7 @@ main {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#828c95", endColorstr="#28343b",GradientType=1 );
   color: whitesmoke;
   height: 10%;
+  transition: 2.5s;
 }
 
 .grid_inicio {
@@ -218,13 +251,14 @@ main {
   text-align: center;
   font-style: italic;
   font-size: 1.2rem;
+  color: white;
 }
 
 .bg-img-history {
-  background: #910200;
-  background: linear-gradient(177deg, #910200 0%, #006f00 80%);
-  background: -webkit-linear-gradient(177deg, #910200 0%, #006f00 80%);
-  background: -moz-linear-gradient(177deg, #910200 0%, #006f00 80%);
+  background: #4b0404;
+  background: linear-gradient(141deg, #4b0404 30%, #117c0c 70%);
+  background: -webkit-linear-gradient(141deg, #4b0404 30%, #117c0c 70%);
+  background: -moz-linear-gradient(141deg, #4b0404 30%, #117c0c 70%);
 }
 
 /*albumes scss*/
@@ -270,6 +304,14 @@ main {
   width: 560px;
   height: 315px;
   margin: 5px;
+}
+
+.bg-img-videos {
+  background-image: url(../images/bg-faros.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*galeria scss*/

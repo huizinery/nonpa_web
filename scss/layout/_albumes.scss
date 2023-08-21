@@ -1,11 +1,8 @@
 /*albumes scss*/
 
+
 .bg_img_album{
-    background-image: url(../images/bg-tocadisco.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;}
+    @include bg-img-fixed(url(../images/bg-tocadisco.jpg),no-repeat,center,cover,fixed )}
 
 .section1{
     display: flex;

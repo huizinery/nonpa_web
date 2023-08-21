@@ -9,3 +9,5 @@
     width: 560px;
     height: 315px; 
     margin: 5px;}
+
+.bg-img-videos { @include bg-img-fixed(url(../images/bg-faros.jpg),no-repeat,center,cover,fixed )}
