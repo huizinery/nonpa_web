@@ -7,22 +7,22 @@
                     }
 
  @keyframes displace {
-                    0% {transform: translatex(0);color: #42961b;
+                    0% {transform: translatex(0);color: #ffe204;
                         }
-                    25% {transform: translatex(-15px);color: #ffe204;
+                    25% {transform: translatex(-15px);color:#42961b;
                         } 
-                    50% {transform: translatex(0px);color: #e61a1a;
+                    50% {transform: translatex(0px);color: #ffe204;
                         }
-                    75% {transform: translatex(15px);color: #ffe204;
+                    75% {transform: translatex(15px);color: #b8541a;
                         }
-                    100% {transform: translatex(0px); color:#42961b;
+                    100% {transform: translatex(0px);color: #ffe204;
                         }
                     }
 
 @keyframes bounce {
                     0% {transform: translateY(0);
                         }   
-                    50% {transform: translateY(-10px);
+                    50% {transform: translateY(-5px);
                         }
                     100% {transform: translateY(0);
                         }

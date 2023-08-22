@@ -8,23 +8,23 @@
 @keyframes displace {
   0% {
     transform: translatex(0);
-    color: #42961b;
+    color: #ffe204;
   }
   25% {
     transform: translatex(-15px);
-    color: #ffe204;
+    color: #42961b;
   }
   50% {
     transform: translatex(0px);
-    color: #e61a1a;
+    color: #ffe204;
   }
   75% {
     transform: translatex(15px);
-    color: #ffe204;
+    color: #b8541a;
   }
   100% {
     transform: translatex(0px);
-    color: #42961b;
+    color: #ffe204;
   }
 }
 @keyframes bounce {
@@ -32,7 +32,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0);
@@ -66,7 +66,7 @@ footer {
   animation-name: displace;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 3.5s;
+  animation-duration: 10s;
   animation-delay: 0s;
 }
 
@@ -135,6 +135,7 @@ main {
   object-fit: cover;
   width: 100%;
   padding: 5px;
+  height: 100%;
 }
 
 .list-group-item {
@@ -142,7 +143,7 @@ main {
 }
 
 .carousel-item img {
-  height: 100%;
+  height: 80vh;
   border-radius: 50px;
   padding: 20px;
   width: 100%;
@@ -252,10 +253,10 @@ main {
 }
 
 .bg-img-history {
-  background: #4b0404;
-  background: linear-gradient(141deg, #4b0404 30%, #117c0c 70%);
-  background: -webkit-linear-gradient(141deg, #4b0404 30%, #117c0c 70%);
-  background: -moz-linear-gradient(141deg, #4b0404 30%, #117c0c 70%);
+  background: #5a0c0c;
+  background: linear-gradient(163deg, #5a0c0c 5%, #186716 100%);
+  background: -webkit-linear-gradient(163deg, #5a0c0c 5%, #186716 100%);
+  background: -moz-linear-gradient(163deg, #5a0c0c 5%, #186716 100%);
 }
 
 /*albumes scss*/
@@ -298,7 +299,7 @@ main {
   animation-name: bounce;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-delay: 0s;
 }
 
