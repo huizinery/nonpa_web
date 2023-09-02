@@ -1,4 +1,9 @@
 /*galeria scss*/
+
+
+.bg-img-galeria{
+@include bg-img-fixed(url(../images/non_history.jpg),no-repeat,center,cover,fixed )}
+
 .grid_gale{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -33,6 +38,7 @@
 .grid_div{width: 100%;height: 100%;}
 .gale_img{width: 100%;height: 100%;
     object-fit: cover;
-    &:hover{transform: scale(1.03)};
+    transform: scale(1);
+    &:hover{transform: scale(1.03)}
 }
 

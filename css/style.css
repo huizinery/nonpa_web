@@ -7,23 +7,18 @@
 
 @keyframes displace {
   0% {
-    transform: translatex(0);
     color: #ffe204;
   }
   25% {
-    transform: translatex(-15px);
     color: #42961b;
   }
   50% {
-    transform: translatex(0px);
     color: #ffe204;
   }
   75% {
-    transform: translatex(15px);
     color: #b8541a;
   }
   100% {
-    transform: translatex(0px);
     color: #ffe204;
   }
 }
@@ -243,6 +238,14 @@ main {
   background-color: #28bb2d;
 }
 
+.text-marin {
+  color: #18553c;
+}
+
+.bg-marin {
+  background-color: #18553c;
+}
+
 /*historia scss*/
 .p_history {
   line-height: 2.5;
@@ -326,6 +329,14 @@ main {
 }
 
 /*galeria scss*/
+.bg-img-galeria {
+  background-image: url(../images/non_history.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .grid_gale {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -388,6 +399,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
 }
 .gale_img:hover {
   transform: scale(1.03);
